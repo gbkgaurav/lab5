@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stacking</title>
+	<style type="text/css">
+		#logo{
+			position: absolute;
+			margin-top:50px;
+			margin-left: 100px;
+		}
+		#black{
+			position: absolute;
+			
+		}
+	</style>
+</head>
+<body>
+<img src="logo.png" id="logo" onclick="change(id)" width="90%" height="90%">
+<img src="untitled.png" id="black" onclick="change(id)" width="90%" height="90%">
+<script type="text/javascript">
+	function change(id){
+		if(id=="logo"){
+			document.getElementById("logo").style.zIndex=50;
+			document.getElementById("black").style.zIndex=0;
+		}else{
+			document.getElementById("logo").style.zIndex=0;
+			document.getElementById("black").style.zIndex=50;
+		}
+	}
+</script>
+</body>
+</html>
+Gaurav forwarded a message
+
+Gaurav sent Today at 9:32am.
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="para">Click the button below to change this paragraph.</p><br/>
+	<button type="button" onclick="myfunction()">Click Here</button>
+	<script type="text/javascript">
+		function myfunction()
+		{
+			document.getElementById("para").innerHTML="The Content is changed.";
+		}
+	</script>
+</body>
+</html>
